@@ -9,11 +9,11 @@ const matches = fs
 
 console.log(matches);
 
-const MatchResults = {
-  HomeWin: 'H',
-  AwayWin: 'A',
-  Draw: 'D',
-};
+enum MatchResults {
+  HomeWin = 'H',
+  AwayWin = 'A',
+  Draw = 'D',
+}
 
 let manUnitedWins = 0;
 
