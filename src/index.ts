@@ -9,15 +9,18 @@ const matches = fs
 
 console.log(matches);
 
-const HomeWin = 'H';
-const AwayWin = 'A';
+const MatchResults = {
+  HomeWin: 'H',
+  AwayWin: 'A',
+  Draw: 'D',
+};
 
 let manUnitedWins = 0;
 
 for (let match of matches) {
   if (
-    (match[1] === 'Man United' && match[5] === HomeWin) ||
-    (match[2] === 'Man United' && match[5] === AwayWin)
+    (match[1] === 'Man United' && match[5] === MatchResults.HomeWin) ||
+    (match[2] === 'Man United' && match[5] === MatchResults.AwayWin)
   ) {
     manUnitedWins++;
   }
