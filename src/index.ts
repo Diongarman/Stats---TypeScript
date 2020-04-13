@@ -19,5 +19,5 @@ for (let match of reader.data) {
     manUnitedWins++;
   }
 }
-
+console.log(reader.data);
 console.log('Man United Wins: ', manUnitedWins);
